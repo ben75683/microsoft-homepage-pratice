@@ -1,0 +1,344 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 微軟正黑體;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    text-decoration:underline;
+}
+.carousal-btn:hover>a,.presentation-btn:hover>a,.commercial-btn:hover>a,.highlight-btn:hover>a{
+    margin-right: 20px ;
+}
+
+main section{
+    margin-bottom:50px;
+}
+.container{
+    max-width: calc(1600px + 10%);
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+header>.container,.menu,.other-menu,.other-menu>div,.member>div{
+    display: flex;
+    align-items: center;
+}
+header>.container{
+    max-height: 56px;
+}
+.menu-btn,.more{
+    display: none;
+}
+.logo{
+    padding: 16px 6px 16px 10px
+}
+nav{
+    width: 65vw;
+    white-space:nowrap
+}
+.other-menu{
+    font-size: 13px;
+    width: 27vw;
+    justify-content: flex-end;
+    white-space:nowrap
+}
+.other-menu>div{
+    margin-left: 10%;
+}
+.cart-btn{
+    margin-right: 1rem;
+}
+.logo img{
+    width: 137px;
+}
+.menu li{
+    font-size: 13px;
+    margin-right: 1.5rem;
+}
+.search-btn>img,.cart-btn>img{
+    width: 1rem;
+    margin-left: 5px;
+}
+.sign-in-btn>img{
+    width: 2rem;
+    margin-left: 5px;
+}
+.carousal{
+    width: 100%;
+    max-height: 600px;
+    height: 31.25vw;
+    position: relative;
+
+}
+.carousal-bg{
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/carousal/bg/1600x600.webp);
+    background-size: cover;
+}
+.carousal-container{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 95px;
+}
+
+.newlisting{
+    width: 4.5rem;
+    height: 2rem;
+    background-color: #FFB900;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2rem;
+    margin-bottom: 5px;
+}
+.carousal-title{
+    margin: 0;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.carousal-info{
+    margin: 0;
+    color: #fff;
+    width: 500px;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+.carousal-btn{
+    background: #fff;
+    width: 15rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.carousal-btn>a{
+    color: #000;
+    margin-right: 10px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+
+}
+.carousal-btn>img{
+    width: 5px;
+}
+
+.store-quicklink{
+    margin-bottom: 50px;
+}
+.quicklink-row{
+    height: 7.5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    column-gap: 60px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.quicklink-col{
+    width: 8rem;
+    row-gap: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.quicklink-col>img{
+    width: 40px;
+}
+.quicklink-col>p{
+    margin: 0;
+}
+.presentation-row,.commercial-row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.presentation-col,.commercial-col{
+    width: calc(25% - 18px);
+}
+.presentation-row img,.commercial-row img{
+    width: 100%;
+    margin-bottom: 11px;
+}
+.presentation-title,.commercial-title{
+    margin-bottom: 5px;
+    font-weight: bolder;
+}
+
+.commercial-title{
+    font-size: 20px;
+}  
+
+.presentation-info,.commercial-info{
+    font-size: 15px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.presentation-btn,.commercial-btn{
+    display: flex;
+    align-items: baseline;
+}
+.presentation-btn>a,.commercial-btn>a{
+    font-weight: bolder;
+    font-size: 15px;
+    color: #4275BA;
+    margin-right: 10px;
+    transition-duration: 0.5s;
+} 
+    
+.presentation-btn>img,.commercial-btn>img{
+    width: 5px;
+}
+.commercial-btns{
+    display: flex;
+    column-gap: 30px;
+}
+
+.highlight{
+    width: 100%;
+    max-height: 600px;
+    height: 31.25vw;
+    position: relative;
+}
+.highlight-bg{
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/highlight/bg/1600x600.webp); 
+    background-size: cover;
+    background-position: right,bottom;
+}
+.highlight-container{
+   position: absolute; 
+   top: 50%;
+   transform: translateY(-50%);
+}
+.highlight-text{
+    width: 100%;
+    padding-left: 95px;
+}
+.highlight-title{
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+.highlight-info{
+    margin: 0;
+    font-size: 15px;
+    width: 500px;
+    margin-bottom: 25px;
+}
+.highlight-btn{
+    background: #000;
+    width: 7.5em;
+    height: 2.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+}
+.highlight-btn>a{
+    color: #fff;
+    margin-right: 10px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+
+}
+.highlight-btn>img{
+    width: 5px;
+}
+.socialfollow{
+    height: 1rem;
+    
+}
+.socialfollow>p{
+    font-size: 15px;
+    color: rgb(105, 105, 105);
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.fa-facebook-square{
+    font-size: 2em;
+    color: #425DAA;
+    margin: 0 10px;
+}
+.fa-youtube{
+    font-size: 2em;
+    color: #ED2B2F;
+}
+footer{
+    background: #F2F2F2;
+}
+.resources {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.resources-row{
+    width: 50%;
+    display: flex;
+    padding-top: 36px;
+    padding-bottom: 4px;
+}
+.resources-col{
+    width: 33%;
+}
+.resources ul,.right ul{
+    padding: 0;
+    margin: 0;
+}
+.resources h4{
+    margin: 0;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #6F716F;
+}
+.resources li{
+    line-height: 2rem;
+}
+.resources a ,.legal-right,.right li,.right a{
+    font-size: 11px;
+    color: #616161;
+}
+.right{
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 16px;;
+}
+.locale-picker{
+    line-height: 1.3rem;
+}
+.legal-right{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.fa-globe-americas{
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+.all-right{
+    display: flex;
+    justify-content: flex-start;
+}
+.all-right li{
+    margin-right: 2rem;
+}
